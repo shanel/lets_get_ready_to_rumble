@@ -136,6 +136,16 @@ EOF
   # Add to sudoers(?)
   echo "deploy    ALL=(ALL) ALL" >> /etc/sudoers
 
+# install integrity
+
+gem install bundler
+git clone git://github.com/integrity/integrity
+cd integrity
+git checkout -b deploy v22
+bundle install
+bundle lock
+rake db
+
 	# Spit & polish
 	  goodstuff
 	  restartServices
