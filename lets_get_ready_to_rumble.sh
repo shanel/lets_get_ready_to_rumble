@@ -46,7 +46,9 @@ system_update
 
 
 # install required apache packages
-apt-get install -y apache2 apache2-mpm-prefork apache2-prefork-dev libapache2-mod-passenger
+# apt-get install -y apache2 apache2-mpm-prefork apache2-prefork-dev libapache2-mod-passenger
+apt-get install -y apache2 libapache2-mod-passenger
+
 
 
 echo "Building apache2 passenger module..."
@@ -118,7 +120,7 @@ EOF
 
 # Install Rails 3
   # Install pre-requirements
-  gem install rails -v '~> 3.0.0'
+  gem install rails -v '~> 3.0.1'
 
 # # Add rails user
 #   echo "rails:rails:1000:1000::/home/deploy:/bin/bash" | newusers
