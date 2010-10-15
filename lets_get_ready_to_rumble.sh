@@ -145,6 +145,9 @@ git checkout -b deploy v22
 bundle install
 bundle lock
 rake db
+git fetch origin
+git merge origin/v22
+bundle exec rackup
 
 	# Spit & polish
 	  goodstuff
