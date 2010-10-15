@@ -1,7 +1,4 @@
 #!/bin/bash
-# 
-# Installs Ruby Enterprise edition, and Nginx with Passenger. 
-# It also adds REE to the system-wide $PATH
 #
 # <UDF name="ree_file" Label="Ruby Enterprise Edition File" default="http://rubyforge.org/frs/download.php/71096/ruby-enterprise-1.8.7-2010.02.tar.gz" example="http://rubyforge.org/frs/download.php/71096/ruby-enterprise-1.8.7-2010.02.tar.gz" />
 # <UDF name="ree_version" Label="Ruby Enterprise Edition Version" default="1.8.7-2010.02" example="1.8.7-2010.02" />
